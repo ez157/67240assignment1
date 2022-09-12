@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suggest a Food Spot">
+    <meta name="keywords" content="food, restaurants, guide, Pittsburgh">
+    <meta name="author" content="Emilie Zhou">
+    <title>Suggestions</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aboreto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <!-- For this assignment, I chose to focus on different food spots in Pittsburgh
+    that I have been to. The theme will include a gallery of top picks, 
+    a more extensive list of all the recommendations, a form for people to leave
+    suggestions, and sample food tour itineraries. -->
+</head>
+
+<!-- header section contains title and nav bar -->
+<header>
+    <a href="index.html"><h1 id ="corner-title">Food in <br> Pittsburgh</h1></a>
+    <nav>
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "gallery.html">Top Picks + Gallery</a></li>
+            <li><a href = "locations.html">All Locations</a></li>
+            <li><a class = "selected" href = "suggestions.html">Suggest a Place</a></li>
+            <li><a href = "itineraries.html">Itineraries</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr id = "header-bottom-hr">
+
+<!-- body section contains table and list of locations -->
+<body>
+    <!-- summarize content that can be found -->
+    <div class = "intro">
+        <p> Have a place you would recommend? I'm always looking for new places to try
+            so if you don't see a place on the list, you can <b>fill out the form below 
+            to suggest a location! </b>
+        </p>
+    </div>
+    <br>
+    <!-- form for leaving food place suggestions -->
+    <form id="suggestion-form">
+        <!-- collects user's name and email -->
+        <fieldset>
+            <legend>Your Info:</legend><br>
+            <label>Name: <input type="text" name="name" size="40" maxlength="100"></label>
+            <br><br>
+            <label>Email: <input type="text" name="email" size="40" maxlength="100"></label>
+            <br><br>
+        </fieldset>
+        <br>
+        <!-- collects user's suggestion -->
+        <fieldset>
+            <legend>Your Suggestion:</legend><br>
+            <p>What type of location is this? <br><br>
+                <label><input type="radio" id="cafe" name="rating" value="cafe">Cafe/Coffee</label>
+                <label><input type="radio" id="brunch" name="rating" value="brunch">Brunch</label>
+                <label><input type="radio" id="lunch-dinner" name="rating" value="lunch/dinner">Lunch/Dinner</label> <br><br>
+                <label><input type="radio" id="sweets" name="rating" value="sweets">Sweet Treats</label>
+                <label><input type="radio" id="drinks" name="rating" value="drinks">Drinks</label>
+            </p>
+            <br>
+            <label>Name of Place: <br>
+                <input type="text" name="suggestion" size="50" maxlength="100"></label><br><br>
+            <p>
+                <label>Comments:</label>
+                <br>
+                <textarea rows="4" cols="40" id="comments"></textarea>
+            </p>
+            <br>
+            <input type="submit" value="Submit review"><br>
+        </fieldset>
+    </form>
+    <br>
+</body>
+
+<hr>
+
+<!-- footer contains name, email, and simple icon -->
+<footer>
+    <h3>Emilie Zhou</h3>
+    <p>Contact me at <a id="email" href="mailto: emiliez@andrew.cmu.edu">emiliez@andrew.cmu.edu</a> if you have any 
+    questions, comments, or suggestions.</p>
+    <img src="img/cup.svg" alt="Mug with flowers line drawing">
+</footer>
+</html>

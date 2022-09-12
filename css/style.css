@@ -1,0 +1,280 @@
+/*  
+I sorted the selectors in this stylesheet by element sorting. Selectors are also styled from general to specific.
+The code below is organized to style the header, navbar, footer, body, headings, table, form, phrasing, misc
+*/
+
+/* header styling */
+header {
+    display: inline-block;
+    width: 100%;
+}
+
+/* styling for top left title of site */
+header #corner-title {
+    font-family: Aboreto;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: left;
+    float: left;
+    padding-left: 5%;
+}
+
+header a, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* navbar styles */
+nav {
+    text-align: right;
+    float: right;
+    padding-top: 7%;
+}
+
+nav a:link {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #25528e;
+}
+
+nav .selected {
+    color: #873a16;
+}
+
+nav li {
+    display: inline;
+    font-size: 1.1em;
+    padding: 30px;
+    font-family: Georgia;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* footer styles */
+footer h3, footer p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: #e1d6c7;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    min-height: 150px;
+}
+
+footer a {
+    color: #25528e;
+    text-decoration: underline;
+}
+
+footer img {
+    width: 200px;
+    height: 200px;
+    margin-top: -50px;
+    padding-left: 20px;
+}
+
+/* body styles*/
+
+body p {
+    font-family: Georgia;
+    line-height: 1.6rem;
+    padding-left: 50px;
+}
+
+/* styling for the intro text at the top of every page */
+.intro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 700px;
+    text-align: center;
+}
+
+.intro p {
+    font-family: Lora;
+    line-height: 2rem;
+}
+
+/* body - styling for the center image on the home page */
+#pgh-background-img {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* body - styling for the image rows found on the home pg and the gallery pg */
+.img-gallery {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-gallery img{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}
+
+/* body - styling for the center image on the gallery page */
+figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    display:inline-block;
+}
+
+figure img {
+    margin-bottom: 20px;
+    width: 700px;
+    height: 400px;
+}
+
+figcaption {
+    font-family: Georgia;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+/* heading styles */
+/* heading - styling for subtitle on home page */
+h2 {
+    font-family: Georgia;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* heading - styling for heading used for labeling sections on pages */
+h4 {
+    font-family: Georgia;
+    font-size: 1.5rem;
+    padding-left: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* table styles*/
+table {
+    font-family: Georgia;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border:none;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    border: 4px dotted #25528e;
+    background-color: rgba(191, 216, 248, 0.3);
+}
+
+table td, th {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 15px;
+}
+
+table th {
+    border-bottom: 1px solid #000;
+}
+
+/* table - remove column lines on left most column */
+table td:first-child, th:first-child {
+    border-left: none;
+}
+
+/* table - remove column lines on right most column */
+table td:last-child, th:last-child{
+    border-right: none;
+}
+
+/* form styles */
+form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    background-color: rgba(191, 216, 248, 0.3);
+}
+
+form p{
+    padding-left: 0;
+}
+
+fieldset {
+    padding-left: 50px;
+}
+
+/* media styles */
+/* styling for embedded google maps */
+iframe {
+    margin-top: 20px;
+}
+
+/* styling for misc elements */
+#header-bottom-hr {
+    margin-top: -20px;
+    border-top: 1.5px solid black;
+}
+
+hr {
+    margin-top: 20px;
+    border-top: 1.5px solid black;
+}
+
+/* attribute styles */
+/* styles for lists on locations page */
+.extras {
+    font-family: Georgia;
+    margin-top: 50px;
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-bottom: 50px;
+}
+
+.extras h4 {
+    text-align: center;
+}
+
+.extras li {
+    line-height: 1.6rem;
+}
+
+/* styles for text on itineraries page */
+[class $= "schedule"] {
+    max-width: 500px;
+    list-style-position: inside;
+    line-height: 1.4rem;
+    font-family: Georgia;
+    padding-bottom: 20px;
+}
+
+/* styles for display of google maps on itineraries page */
+.sqhill-schedule, .oakland-schedule {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.shady-schedule, .strip-schedule {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.downtown-schedule, .lawrence-schedule {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
